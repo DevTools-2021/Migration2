@@ -1,10 +1,10 @@
 name: Install PowerShell using pwsh-setup-action
 
-on: [push, pull_request]
+on: push
 
 jobs:
   install-pwsh:
-    runs-on: ubuntu-latest  # Or windows-latest, macos-latest
+    runs-on: ubuntu-latest 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
